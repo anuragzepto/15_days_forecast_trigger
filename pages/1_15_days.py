@@ -16,7 +16,8 @@ if "authenticated" not in st.session_state or not st.session_state.authenticated
 
 st.title("15 days job schedule")
 
-EMAIL_ADDRESS = st.text_input("Enter email address to recieve notification", value="anurag.pal@zeptonow.com","himanshu.batra@zeptonow.com")
+EMAIL_ADDRESS = st.text_input("Enter email address to recieve notification", 
+                              value="anurag.pal@zeptonow.com,himanshu.batra@zeptonow.com")
 
 if st.button("Trigger Job"):
     headers = {
